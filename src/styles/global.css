@@ -1,0 +1,73 @@
+/* src/styles/global.css */
+
+:root {
+  /* Palette from AGENTS.md */
+  --color-primary: #0D7377;        /* Turquesa oscuro — enlaces, acentos principales */
+  --color-primary-light: #14A3A8;  /* Turquesa medio — hover states */
+  --color-accent: #7FDBDA;         /* Turquesa claro — detalles decorativos, bordes suaves */
+  --color-bg: #FAFAF8;             /* Fondo principal — blanco cálido */
+  --color-bg-alt: #E8F6F6;         /* Fondo alternativo — secciones alternas */
+  --color-text: #2D3436;           /* Texto principal */
+  --color-text-secondary: #636E72; /* Texto secundario, descripciones */
+  --color-border: #B2DFDB;         /* Bordes y separadores suaves */
+
+  /* Spacing */
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+
+  /* Fonts */
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Source Sans 3', 'Segoe UI', sans-serif;
+}
+
+html {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--color-primary);
+  margin-top: 0;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--color-primary-light);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Avoid inline gap */
+}
+
+/* Utilities if needed, but keeping it vanilla */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.section {
+  padding: var(--spacing-xl) 0;
+}
+
+.section-alt {
+  background-color: var(--color-bg-alt);
+}

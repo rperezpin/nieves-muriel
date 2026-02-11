@@ -1,0 +1,60 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer>
+    <div class="container footer-content">
+        <p>
+            &copy; {year} Nieves Muriel García. Todos los derechos reservados.
+        </p>
+        <p class="credit">
+            Made with <span class="heart">💙</span> by <a
+                href="https://rpidev.com"
+                target="_blank"
+                rel="noopener noreferrer">rpidev</a
+            >
+        </p>
+    </div>
+</footer>
+
+<style>
+    footer {
+        background-color: var(--color-primary);
+        color: white;
+        padding: 3rem 0;
+        margin-top: 4rem;
+        text-align: center;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .footer-content p {
+        margin: 0;
+        font-size: 0.9rem;
+        opacity: 0.9;
+    }
+
+    .credit {
+        font-size: 0.8rem !important;
+        opacity: 0.8 !important;
+        margin-top: 0.5rem;
+    }
+
+    .credit a {
+        color: white;
+        text-decoration: underline;
+        opacity: 0.9;
+    }
+
+    .credit a:hover {
+        opacity: 1;
+    }
+
+    .heart {
+        color: #3b82f6;
+    }
+</style>

@@ -1,0 +1,19 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
+import BookList from "../components/BookList.astro";
+import LinksSection from "../components/LinksSection.astro";
+import { editorials, collaborations } from "../data/content";
+---
+
+<Layout title="Nieves Muriel García | Escritora y Poeta">
+    <Hero />
+    <BookList />
+    <LinksSection id="editorials" title="Editoriales" links={editorials} />
+    <LinksSection
+        id="collabs"
+        title="Colaboraciones y Enlaces"
+        links={collaborations}
+        class="section-alt"
+    />
+</Layout>
